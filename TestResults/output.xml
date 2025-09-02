@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-09-02T23:55:31.603674" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\ASUS\PycharmProjects\RobotFramework\TestCases\test.robot">
+<test id="s1-t1" name="TC001_Checking the testing application with valid data" line="9">
+<kw name="Open Browser and enter valid details" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:32.798751" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/#'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-02T23:55:32.798439" elapsed="7.941601"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-02T23:55:40.740323" elapsed="0.050877"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-09-02T23:55:32.797275" elapsed="7.994152"/>
+</kw>
+<kw name="Get Total Rows" owner="dataval">
+<msg time="2025-09-02T23:55:41.311814" level="INFO">${total_row} = 2</msg>
+<var>${total_row}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<status status="PASS" start="2025-09-02T23:55:40.791911" elapsed="0.520017"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-02T23:55:41.313230" level="INFO">${end} = 3</msg>
+<var>${end}</var>
+<arg>${total_row} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.312606" elapsed="0.001052"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${end}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.314223" elapsed="0.000504"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.334847" level="INFO">${name_val} = srinikamalikutty</msg>
+<var>${name_val}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>name</arg>
+<status status="PASS" start="2025-09-02T23:55:41.316659" elapsed="0.018251"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.359428" level="INFO">${email_val} = srikamalikutty@123</msg>
+<var>${email_val}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>email</arg>
+<status status="PASS" start="2025-09-02T23:55:41.335280" elapsed="0.024253"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.380406" level="INFO">${cell} = 9988776655.0</msg>
+<var>${cell}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>cell</arg>
+<status status="PASS" start="2025-09-02T23:55:41.359894" elapsed="0.020684"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.405057" level="INFO">${address_val} = chennai</msg>
+<var>${address_val}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>address</arg>
+<status status="PASS" start="2025-09-02T23:55:41.380880" elapsed="0.024260"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.433955" level="INFO">${title_val} = Automation Testing Practice</msg>
+<var>${title_val}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>title</arg>
+<status status="PASS" start="2025-09-02T23:55:41.405442" elapsed="0.028625"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.460492" level="INFO">${gender_val} = male</msg>
+<var>${gender_val}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>gender</arg>
+<status status="PASS" start="2025-09-02T23:55:41.434449" elapsed="0.026153"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.480780" level="INFO">${country_val} = India</msg>
+<var>${country_val}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>country</arg>
+<status status="PASS" start="2025-09-02T23:55:41.460955" elapsed="0.019953"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.506676" level="INFO">${colors_val} = Blue</msg>
+<var>${colors_val}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>colors</arg>
+<status status="PASS" start="2025-09-02T23:55:41.481366" elapsed="0.025370"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.530885" level="INFO">${list_val} = Cat</msg>
+<var>${list_val}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>animals</arg>
+<status status="PASS" start="2025-09-02T23:55:41.506984" elapsed="0.023999"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.554460" level="INFO">${date1} = 09/02/2025</msg>
+<var>${date1}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>date1</arg>
+<status status="PASS" start="2025-09-02T23:55:41.531367" elapsed="0.023153"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.569939" level="INFO">${date2} = 02/09/2025</msg>
+<var>${date2}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>date2</arg>
+<status status="PASS" start="2025-09-02T23:55:41.554763" elapsed="0.015267"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.589009" level="INFO">${fromdate} = 02-09-2025</msg>
+<var>${fromdate}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>from</arg>
+<status status="PASS" start="2025-09-02T23:55:41.570359" elapsed="0.018717"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.601156" level="INFO">${enddate} = 02-09-2025</msg>
+<var>${enddate}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>to</arg>
+<status status="PASS" start="2025-09-02T23:55:41.589309" elapsed="0.011934"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.614027" level="INFO">${file1_msg} = Single file selected: 107_S2058_110_0406.pdf, Size: 119649 bytes, Type: application/pdf</msg>
+<var>${file1_msg}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>msg1</arg>
+<status status="PASS" start="2025-09-02T23:55:41.601573" elapsed="0.012525"/>
+</kw>
+<kw name="Get Row" owner="dataval">
+<msg time="2025-09-02T23:55:41.623097" level="INFO">${file2_msg} = Multiple files selected:</msg>
+<var>${file2_msg}</var>
+<arg>${file}</arg>
+<arg>${sheet}</arg>
+<arg>${i}</arg>
+<arg>msg2</arg>
+<status status="PASS" start="2025-09-02T23:55:41.614309" elapsed="0.008844"/>
+</kw>
+<kw name="Enter the information" owner="keywords">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:41.634444" level="INFO">${title} = Automation Testing Practice</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.625073" elapsed="0.009466"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.634846" elapsed="0.000595"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>${title_val}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.636061" elapsed="0.000452"/>
+</kw>
+<msg time="2025-09-02T23:55:41.636874" level="INFO">${sts} = True</msg>
+<var>${sts}</var>
+<arg>Should Be Equal</arg>
+<arg>${title}</arg>
+<arg>${title_val}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.635785" elapsed="0.001257"/>
+</kw>
+<if>
+<branch type="IF" condition="${sts}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Matched!!!!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.637729" elapsed="0.000325"/>
+</kw>
+<status status="PASS" start="2025-09-02T23:55:41.637451" elapsed="0.000691"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="NOT RUN" start="2025-09-02T23:55:41.638745" elapsed="0.005202"/>
+</kw>
+<kw name="Fail" owner="BuiltIn">
+<arg>Failed!!!</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2025-09-02T23:55:41.644266" elapsed="0.000081"/>
+</kw>
+<status status="NOT RUN" start="2025-09-02T23:55:41.638408" elapsed="0.006067"/>
+</branch>
+<status status="PASS" start="2025-09-02T23:55:41.637339" elapsed="0.007239"/>
+</if>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.644806" elapsed="0.000686"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${name}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.645830" elapsed="0.032614"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:41.679643" level="INFO">Typing text 'srinikamalikutty' into text field 'id:name'.</msg>
+<arg>${name}</arg>
+<arg>${name_val}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.679087" elapsed="0.257236"/>
+</kw>
+<arg>Input Text</arg>
+<arg>${name}</arg>
+<arg>${name_val}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.678680" elapsed="0.257768"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.936630" elapsed="0.024260"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:41.962128" level="INFO">Typing text 'srikamalikutty@123' into text field 'id:email'.</msg>
+<arg>${email}</arg>
+<arg>${email_val}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.961636" elapsed="0.223724"/>
+</kw>
+<arg>Input Text</arg>
+<arg>${email}</arg>
+<arg>${email_val}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-02T23:55:41.961271" elapsed="0.224279"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${phone}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-02T23:55:42.185984" elapsed="0.024208"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:42.211257" level="INFO">Typing text '9988776655.0' into text field 'id:phone'.</msg>
+<arg>${phone}</arg>
+<arg>${cell}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:42.210942" elapsed="0.225694"/>
+</kw>
+<arg>Input Text</arg>
+<arg>${phone}</arg>
+<arg>${cell}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-02T23:55:42.210430" elapsed="0.226333"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${textarea}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-02T23:55:42.436936" elapsed="0.024497"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:42.462585" level="INFO">Typing text 'chennai' into text field 'id:textarea'.</msg>
+<arg>${textarea}</arg>
+<arg>${address_val}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:42.462137" elapsed="0.114031"/>
+</kw>
+<arg>Input Text</arg>
+<arg>${textarea}</arg>
+<arg>${address_val}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-02T23:55:42.461795" elapsed="0.114645"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:42.577351" level="INFO">Selecting 'male' from radio button 'xpath://*[@id='male']'.</msg>
+<msg time="2025-09-02T23:55:42.811882" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-02T23:55:42.812400" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')]' is not a valid XPath expression.
+  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e8153d85+79397]
+	GetHandleVerifier [0x0x7ff7e8153de0+79488]
+	(No symbol) [0x0x7ff7e7efc0fa]
+	(No symbol) [0x0x7ff7e7f03a99]
+	(No symbol) [0x0x7ff7e7f06b3c]
+	(No symbol) [0x0x7ff7e7f06c0f]
+	(No symbol) [0x0x7ff7e7f52887]
+	(No symbol) [0x0x7ff7e7f5328c]
+	(No symbol) [0x0x7ff7e7fa6567]
+	(No symbol) [0x0x7ff7e7f7b1df]
+	(No symbol) [0x0x7ff7e7fa3344]
+	(No symbol) [0x0x7ff7e7f7af73]
+	(No symbol) [0x0x7ff7e7f441b1]
+	(No symbol) [0x0x7ff7e7f44f43]
+	GetHandleVerifier [0x0x7ff7e841e1ed+3005069]
+	GetHandleVerifier [0x0x7ff7e841831d+2980797]
+	GetHandleVerifier [0x0x7ff7e8437e0d+3110573]
+	GetHandleVerifier [0x0x7ff7e816d6de+184190]
+	GetHandleVerifier [0x0x7ff7e817516f+215567]
+	GetHandleVerifier [0x0x7ff7e815c974+115220]
+	GetHandleVerifier [0x0x7ff7e815cb29+115657]
+	GetHandleVerifier [0x0x7ff7e8143268+11016]
+	BaseThreadInitThunk [0x0x7ffc9bc5e8d7+23]
+	RtlUserThreadStart [0x0x7ffc9cdc8d9c+44]
+</msg>
+<arg>${gender}</arg>
+<arg>${gender_val}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="FAIL" start="2025-09-02T23:55:42.577092" elapsed="0.243843">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')]' is not a valid XPath expression.
+  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e8153d85+79397]
+	GetHandleVerifier [0x0x7ff7e8153de0+79488]
+	(No symbol) [0x0x7ff7e7efc0fa]
+	(No symbol) [0x0x7ff7e7f03a99]
+	(No symbol) [0x0x7ff7e7f06b3c]
+	(No symbol) [0x0x7ff7e7f06c0f]
+	(No symbol) [0x0x7ff7e7f52887]
+	(No symbol) [0x0x7ff7e7f5328c]
+	(No symbol) [0x0x7ff7e7fa6567]
+	(No symbol) [0x0x7ff7e7f7b1df]
+	(No symbol) [0x0x7ff7e7fa3344]
+	(No symbol) [0x0x7ff7e7f7af73]
+	(No symbol) [0x0x7ff7e7f441b1]
+	(No symbol) [0x0x7ff7e7f44f43]
+	GetHandleVerifier [0x0x7ff7e841e1ed+3005069]
+	GetHandleVerifier [0x0x7ff7e841831d+2980797]
+	GetHandleVerifier [0x0x7ff7e8437e0d+3110573]
+	GetHandleVerifier [0x0x7ff7e816d6de+184190]
+	GetHandleVerifier [0x0x7ff7e817516f+215567]
+	GetHandleVerifier [0x0x7ff7e815c974+115220]
+	GetHandleVerifier [0x0x7ff7e815cb29+115657]
+	GetHandleVerifier [0x0x7ff7e8143268+11016]
+	BaseThreadInitThunk [0x0x7ffc9bc5e8d7+23]
+	RtlUserThreadStart [0x0x7ffc9cdc8d9c+44]
+</status>
+</kw>
+<arg>Select Radio Button</arg>
+<arg>${gender}</arg>
+<arg>${gender_val}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="FAIL" start="2025-09-02T23:55:42.576823" elapsed="0.244599">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')]' is not a valid XPath expression.
+  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e8153d85+79397]
+	GetHandleVerifier [0x0x7ff7e8153de0+79488]
+	(No symbol) [0x0x7ff7e7efc0fa]
+	(No symbol) [0x0x7ff7e7f03a99]
+	(No symbol) [0x0x7ff7e7f06b3c]
+	(No symbol) [0x0x7ff7e7f06c0f]
+	(No symbol) [0x0x7ff7e7f52887]
+	(No symbol) [0x0x7ff7e7f5328c]
+	(No symbol) [0x0x7ff7e7fa6567]
+	(No symbol) [0x0x7ff7e7f7b1df]
+	(No symbol) [0x0x7ff7e7fa3344]
+	(No symbol) [0x0x7ff7e7f7af73]
+	(No symbol) [0x0x7ff7e7f441b1]
+	(No symbol) [0x0x7ff7e7f44f43]
+	GetHandleVerifier [0x0x7ff7e841e1ed+3005069]
+	GetHandleVerifier [0x0x7ff7e841831d+2980797]
+	GetHandleVerifier [0x0x7ff7e8437e0d+3110573]
+	GetHandleVerifier [0x0x7ff7e816d6de+184190]
+	GetHandleVerifier [0x0x7ff7e817516f+215567]
+	GetHandleVerifier [0x0x7ff7e815c974+115220]
+	GetHandleVerifier [0x0x7ff7e815cb29+115657]
+	GetHandleVerifier [0x0x7ff7e8143268+11016]
+	BaseThreadInitThunk [0x0x7ffc9bc5e8d7+23]
+	RtlUserThreadStart [0x0x7ffc9cdc8d9c+44]
+</status>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:42.841545" level="INFO">${list} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.45")&gt;, &lt;selenium.webdriv...</msg>
+<var>${list}</var>
+<arg>${days_checkbox}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:42.821794" elapsed="0.019834"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:42.842882" level="INFO">Selecting checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.45")&gt;'.</msg>
+<arg>${i}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:42.842463" elapsed="0.131398"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.45")&gt;</var>
+<status status="PASS" start="2025-09-02T23:55:42.842189" elapsed="0.131769"/>
+</iter>
+<iter>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:42.974595" level="INFO">Selecting checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.46")&gt;'.</msg>
+<arg>${i}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:42.974283" elapsed="0.103159"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.46")&gt;</var>
+<status status="PASS" start="2025-09-02T23:55:42.974139" elapsed="0.103467"/>
+</iter>
+<iter>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:43.078594" level="INFO">Selecting checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.47")&gt;'.</msg>
+<arg>${i}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.078155" elapsed="0.128349"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.47")&gt;</var>
+<status status="PASS" start="2025-09-02T23:55:43.077904" elapsed="0.128759"/>
+</iter>
+<iter>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:43.207365" level="INFO">Selecting checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.48")&gt;'.</msg>
+<arg>${i}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.207069" elapsed="0.111874"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.48")&gt;</var>
+<status status="PASS" start="2025-09-02T23:55:43.206892" elapsed="0.112181"/>
+</iter>
+<iter>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:43.320009" level="INFO">Selecting checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.49")&gt;'.</msg>
+<arg>${i}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.319587" elapsed="0.098070"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.49")&gt;</var>
+<status status="PASS" start="2025-09-02T23:55:43.319340" elapsed="0.098617"/>
+</iter>
+<iter>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:43.419729" level="INFO">Selecting checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.50")&gt;'.</msg>
+<arg>${i}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.419006" elapsed="0.086100"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.50")&gt;</var>
+<status status="PASS" start="2025-09-02T23:55:43.418485" elapsed="0.086778"/>
+</iter>
+<iter>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:43.506002" level="INFO">Selecting checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.51")&gt;'.</msg>
+<arg>${i}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.505736" elapsed="0.083863"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="785ced5edb799cf23b1b6dc352712d73", element="f.1E7A1853C5CD2674086DA153B2601A18.d.A30E052BCA2B10178F05A14BD9124AE1.e.51")&gt;</var>
+<status status="PASS" start="2025-09-02T23:55:43.505562" elapsed="0.084201"/>
+</iter>
+<var>${i}</var>
+<value>@{list}</value>
+<status status="PASS" start="2025-09-02T23:55:42.841797" elapsed="0.748090"/>
+</for>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${country}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.590240" elapsed="0.039683"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:43.631354" level="INFO">Selecting options from selection list 'id:country' by label India.</msg>
+<arg>${country}</arg>
+<arg>${country_val}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.630951" elapsed="0.134309"/>
+</kw>
+<arg>Select From List By Label</arg>
+<arg>${country}</arg>
+<arg>${country_val}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.630491" elapsed="0.135095"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${colors}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.766010" elapsed="0.024911"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:43.792331" level="INFO">Selecting options from selection list 'id:colors' by label Blue.</msg>
+<arg>${colors}</arg>
+<arg>${colors_val}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.791757" elapsed="0.133102"/>
+</kw>
+<arg>Select From List By Label</arg>
+<arg>${colors}</arg>
+<arg>${colors_val}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.791265" elapsed="0.133817"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${animalslist}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.925447" elapsed="0.027405"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:43.953818" level="INFO">Selecting options from selection list 'id:animals' by label Cat.</msg>
+<arg>${animalslist}</arg>
+<arg>${list_val}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.953345" elapsed="0.158112"/>
+</kw>
+<arg>Select From List By Label</arg>
+<arg>${animalslist}</arg>
+<arg>${list_val}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-02T23:55:43.953079" elapsed="0.158491"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${datepicker1}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-02T23:55:44.111767" elapsed="0.024528"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:44.137465" level="INFO">Typing text '09/02/2025' into text field 'id:datepicker'.</msg>
+<arg>${datepicker1}</arg>
+<arg>${date1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:44.136995" elapsed="0.177791"/>
+</kw>
+<arg>Input Text</arg>
+<arg>${datepicker1}</arg>
+<arg>${date1}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-02T23:55:44.136626" elapsed="0.178350"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${datepicker2}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-02T23:55:44.315330" elapsed="0.025758"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:44.342225" level="INFO">Typing text '02/09/2025' into text field 'id:txtDate'.</msg>
+<msg time="2025-09-02T23:55:44.616311" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-02T23:55:44.616721" level="FAIL">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=139.0.7258.155)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e8153d85+79397]
+	GetHandleVerifier [0x0x7ff7e8153de0+79488]
+	(No symbol) [0x0x7ff7e7efbf2c]
+	(No symbol) [0x0x7ff7e7f484a7]
+	(No symbol) [0x0x7ff7e7f7b19a]
+	(No symbol) [0x0x7ff7e7f45996]
+	(No symbol) [0x0x7ff7e7f7b3b0]
+	(No symbol) [0x0x7ff7e7fa3344]
+	(No symbol) [0x0x7ff7e7f7af73]
+	(No symbol) [0x0x7ff7e7f441b1]
+	(No symbol) [0x0x7ff7e7f44f43]
+	GetHandleVerifier [0x0x7ff7e841e1ed+3005069]
+	GetHandleVerifier [0x0x7ff7e841831d+2980797]
+	GetHandleVerifier [0x0x7ff7e8437e0d+3110573]
+	GetHandleVerifier [0x0x7ff7e816d6de+184190]
+	GetHandleVerifier [0x0x7ff7e817516f+215567]
+	GetHandleVerifier [0x0x7ff7e815c974+115220]
+	GetHandleVerifier [0x0x7ff7e815cb29+115657]
+	GetHandleVerifier [0x0x7ff7e8143268+11016]
+	BaseThreadInitThunk [0x0x7ffc9bc5e8d7+23]
+	RtlUserThreadStart [0x0x7ffc9cdc8d9c+44]
+</msg>
+<arg>${datepicker2}</arg>
+<arg>${date2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-02T23:55:44.341753" elapsed="0.278801">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=139.0.7258.155)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e8153d85+79397]
+	GetHandleVerifier [0x0x7ff7e8153de0+79488]
+	(No symbol) [0x0x7ff7e7efbf2c]
+	(No symbol) [0x0x7ff7e7f484a7]
+	(No symbol) [0x0x7ff7e7f7b19a]
+	(No symbol) [0x0x7ff7e7f45996]
+	(No symbol) [0x0x7ff7e7f7b3b0]
+	(No symbol) [0x0x7ff7e7fa3344]
+	(No symbol) [0x0x7ff7e7f7af73]
+	(No symbol) [0x0x7ff7e7f441b1]
+	(No symbol) [0x0x7ff7e7f44f43]
+	GetHandleVerifier [0x0x7ff7e841e1ed+3005069]
+	GetHandleVerifier [0x0x7ff7e841831d+2980797]
+	GetHandleVerifier [0x0x7ff7e8437e0d+3110573]
+	GetHandleVerifier [0x0x7ff7e816d6de+184190]
+	GetHandleVerifier [0x0x7ff7e817516f+215567]
+	GetHandleVerifier [0x0x7ff7e815c974+115220]
+	GetHandleVerifier [0x0x7ff7e815cb29+115657]
+	GetHandleVerifier [0x0x7ff7e8143268+11016]
+	BaseThreadInitThunk [0x0x7ffc9bc5e8d7+23]
+	RtlUserThreadStart [0x0x7ffc9cdc8d9c+44]
+</status>
+</kw>
+<arg>Input Text</arg>
+<arg>${datepicker2}</arg>
+<arg>${date2}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="FAIL" start="2025-09-02T23:55:44.341355" elapsed="0.279456">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=139.0.7258.155)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e8153d85+79397]
+	GetHandleVerifier [0x0x7ff7e8153de0+79488]
+	(No symbol) [0x0x7ff7e7efbf2c]
+	(No symbol) [0x0x7ff7e7f484a7]
+	(No symbol) [0x0x7ff7e7f7b19a]
+	(No symbol) [0x0x7ff7e7f45996]
+	(No symbol) [0x0x7ff7e7f7b3b0]
+	(No symbol) [0x0x7ff7e7fa3344]
+	(No symbol) [0x0x7ff7e7f7af73]
+	(No symbol) [0x0x7ff7e7f441b1]
+	(No symbol) [0x0x7ff7e7f44f43]
+	GetHandleVerifier [0x0x7ff7e841e1ed+3005069]
+	GetHandleVerifier [0x0x7ff7e841831d+2980797]
+	GetHandleVerifier [0x0x7ff7e8437e0d+3110573]
+	GetHandleVerifier [0x0x7ff7e816d6de+184190]
+	GetHandleVerifier [0x0x7ff7e817516f+215567]
+	GetHandleVerifier [0x0x7ff7e815c974+115220]
+	GetHandleVerifier [0x0x7ff7e815cb29+115657]
+	GetHandleVerifier [0x0x7ff7e8143268+11016]
+	BaseThreadInitThunk [0x0x7ffc9bc5e8d7+23]
+	RtlUserThreadStart [0x0x7ffc9cdc8d9c+44]
+</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${startdate}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-02T23:55:44.621176" elapsed="0.036784"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:55:44.659220" level="INFO">Typing text '02-09-2025' into text field 'id:start-date'.</msg>
+<arg>${startdate}</arg>
+<arg>${fromdate}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-02T23:55:44.658675" elapsed="0.141394"/>
+</kw>
+<arg>Input Text</arg>
+<arg>${startdate}</arg>
+<arg>${fromdate}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-02T23:55:44.658352" elapsed="0.141881"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-09-02T23:56:05.200152" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-02T23:56:05.200405" level="FAIL">Element '02-09-2025' not visible after 20 seconds.</msg>
+<arg>${enddate}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-09-02T23:55:44.800444" elapsed="20.402553">Element '02-09-2025' not visible after 20 seconds.</status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<arg>Input Text</arg>
+<arg>${enddate}</arg>
+<arg>${enddate}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="NOT RUN" start="2025-09-02T23:56:05.203400" elapsed="0.000088"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${submit_btn}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-09-02T23:56:05.203757" elapsed="0.000070"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<arg>Click Button</arg>
+<arg>${submit_btn}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="NOT RUN" start="2025-09-02T23:56:05.204078" elapsed="0.000078"/>
+</kw>
+<arg>${name_val}</arg>
+<arg>${title_val}</arg>
+<arg>${email_val}</arg>
+<arg>${cell}</arg>
+<arg>${address_val}</arg>
+<arg>${gender_val}</arg>
+<arg>${country_val}</arg>
+<arg>${colors_val}</arg>
+<arg>${list_val}</arg>
+<arg>${date1}</arg>
+<arg>${date2}</arg>
+<arg>${fromdate}</arg>
+<arg>${enddate}</arg>
+<status status="FAIL" start="2025-09-02T23:55:41.623634" elapsed="23.580959">Several failures occurred:
+
+1) InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')]' is not a valid XPath expression.
+  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e8153d85+79397]
+	GetHandleVerifier [0x0x7ff7e8153de0+79488]
+	(No symbol) [0x0x7ff7e7efc0fa]
+	(No symbol) [0x0x7ff7e7f03a99]
+	(No symbol) [0x0x7ff7e7f06b3c]
+	(No symbol) [0x0x7ff7e7f06c0f]
+	(No symbol) [0x0x7ff7e7f52887]
+	(No symbol) [0x0x7ff7e7f5328c]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff7e7f7b19a]
+	(No symbol) [0x0x7ff7e7f45996]
+	(No symbol) [0x0x7ff7e7f7b3b0]
+	(No symbol) [0x0x7ff7e7fa3344]
+	(No symbol) [0x0x7ff7e7f7af73]
+	(No symbol) [0x0x7ff7e7f441b1]
+	(No symbol) [0x0x7ff7e7f44f43]
+	GetHandleVerifier [0x0x7ff7e841e1ed+3005069]
+	GetHandleVerifier [0x0x7ff7e841831d+2980797]
+	GetHandleVerifier [0x0x7ff7e8437e0d+3110573]
+	GetHandleVerifier [0x0x7ff7e816d6de+184190]
+	GetHandleVerifier [0x0x7ff7e817516f+215567]
+	GetHandleVerifier [0x0x7ff7e815c974+115220]
+	GetHandleVerifier [0x0x7ff7e815cb29+115657]
+	GetHandleVerifier [0x0x7ff7e8143268+11016]
+	BaseThreadInitThunk [0x0x7ffc9bc5e8d7+23]
+	RtlUserThreadStart [0x0x7ffc9cdc8d9c+44]
+
+
+3) Element '02-09-2025' not visible after 20 seconds.</status>
+</kw>
+<kw name="Uploading the documents and getting table values" owner="keywords">
+<arg>${file1_val}</arg>
+<arg>${file2_val}</arg>
+<arg>${file1_msg}</arg>
+<arg>${file2_msg}</arg>
+<status status="NOT RUN" start="2025-09-02T23:56:05.205278" elapsed="0.000092"/>
+</kw>
+<kw name="Reading the table values" owner="keywords">
+<arg>${path}</arg>
+<status status="NOT RUN" start="2025-09-02T23:56:05.205770" elapsed="0.000081"/>
+</kw>
+<kw name="Handling Alerts And mouse Actions" owner="keywords">
+<status status="NOT RUN" start="2025-09-02T23:56:05.206178" elapsed="0.000076"/>
+</kw>
+<kw name="New Tab and window" owner="keywords">
+<status status="NOT RUN" start="2025-09-02T23:56:05.206609" elapsed="0.000075"/>
+</kw>
+<var name="${i}">0</var>
+<status status="FAIL" start="2025-09-02T23:55:41.315996" elapsed="23.890908">Several failures occurred:
+
+1) InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')]' is not a valid XPath expression.
+  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e8153d85+79397]
+	GetHandleVerifier [0x0x7ff7e8153de0+79488]
+	(No symbol) [0x0x7ff7e7efc0fa]
+	(No symbol) [0x0x7ff7e7f03a99]
+	(No symbol) [0x0x7ff7e7f06b3c]
+	(No symbol) [0x0x7ff7e7f06c0f]
+	(No symbol) [0x0x7ff7e7f52887]
+	(No symbol) [0x0x7ff7e7f5328c]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff7e7f7b19a]
+	(No symbol) [0x0x7ff7e7f45996]
+	(No symbol) [0x0x7ff7e7f7b3b0]
+	(No symbol) [0x0x7ff7e7fa3344]
+	(No symbol) [0x0x7ff7e7f7af73]
+	(No symbol) [0x0x7ff7e7f441b1]
+	(No symbol) [0x0x7ff7e7f44f43]
+	GetHandleVerifier [0x0x7ff7e841e1ed+3005069]
+	GetHandleVerifier [0x0x7ff7e841831d+2980797]
+	GetHandleVerifier [0x0x7ff7e8437e0d+3110573]
+	GetHandleVerifier [0x0x7ff7e816d6de+184190]
+	GetHandleVerifier [0x0x7ff7e817516f+215567]
+	GetHandleVerifier [0x0x7ff7e815c974+115220]
+	GetHandleVerifier [0x0x7ff7e815cb29+115657]
+	GetHandleVerifier [0x0x7ff7e8143268+11016]
+	BaseThreadInitThunk [0x0x7ffc9bc5e8d7+23]
+	RtlUserThreadStart [0x0x7ffc9cdc8d9c+44]
+
+
+3) Element '02-09-2025' not visible after 20 seconds.</status>
+</iter>
+<var>${i}</var>
+<value>0</value>
+<value>${end}</value>
+<status status="FAIL" start="2025-09-02T23:55:41.315341" elapsed="23.891872">Several failures occurred:
+
+1) InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')]' is not a valid XPath expression.
+  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e8153d85+79397]
+	GetHandleVerifier [0x0x7ff7e8153de0+79488]
+	(No symbol) [0x0x7ff7e7efc0fa]
+	(No symbol) [0x0x7ff7e7f03a99]
+	(No symbol) [0x0x7ff7e7f06b3c]
+	(No symbol) [0x0x7ff7e7f06c0f]
+	(No symbol) [0x0x7ff7e7f52887]
+	(No symbol) [0x0x7ff7e7f5328c]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff7e7f7b19a]
+	(No symbol) [0x0x7ff7e7f45996]
+	(No symbol) [0x0x7ff7e7f7b3b0]
+	(No symbol) [0x0x7ff7e7fa3344]
+	(No symbol) [0x0x7ff7e7f7af73]
+	(No symbol) [0x0x7ff7e7f441b1]
+	(No symbol) [0x0x7ff7e7f44f43]
+	GetHandleVerifier [0x0x7ff7e841e1ed+3005069]
+	GetHandleVerifier [0x0x7ff7e841831d+2980797]
+	GetHandleVerifier [0x0x7ff7e8437e0d+3110573]
+	GetHandleVerifier [0x0x7ff7e816d6de+184190]
+	GetHandleVerifier [0x0x7ff7e817516f+215567]
+	GetHandleVerifier [0x0x7ff7e815c974+115220]
+	GetHandleVerifier [0x0x7ff7e815cb29+115657]
+	GetHandleVerifier [0x0x7ff7e8143268+11016]
+	BaseThreadInitThunk [0x0x7ffc9bc5e8d7+23]
+	RtlUserThreadStart [0x0x7ffc9cdc8d9c+44]
+
+
+3) Element '02-09-2025' not visible after 20 seconds.</status>
+</for>
+<status status="FAIL" start="2025-09-02T23:55:32.796268" elapsed="32.411889">Several failures occurred:
+
+1) InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type='radio' and @name='xpath://*[@id='male']' and (@value='male' or @id='male')]' is not a valid XPath expression.
+  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e8153d85+79397]
+	GetHandleVerifier [0x0x7ff7e8153de0+79488]
+	(No symbol) [0x0x7ff7e7efc0fa]
+	(No symbol) [0x0x7ff7e7f03a99]
+	(No symbol) [0x0x7ff7e7f06b3c]
+	(No symbol) [0x0x7ff7e7f06c0f]
+	(No symbol) [0x0x7ff7e7f52887]
+	(No symbol) [0x0x7ff7e7f5328c]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff7e7f7b19a]
+	(No symbol) [0x0x7ff7e7f45996]
+	(No symbol) [0x0x7ff7e7f7b3b0]
+	(No symbol) [0x0x7ff7e7fa3344]
+	(No symbol) [0x0x7ff7e7f7af73]
+	(No symbol) [0x0x7ff7e7f441b1]
+	(No symbol) [0x0x7ff7e7f44f43]
+	GetHandleVerifier [0x0x7ff7e841e1ed+3005069]
+	GetHandleVerifier [0x0x7ff7e841831d+2980797]
+	GetHandleVerifier [0x0x7ff7e8437e0d+3110573]
+	GetHandleVerifier [0x0x7ff7e816d6de+184190]
+	GetHandleVerifier [0x0x7ff7e817516f+215567]
+	GetHandleVerifier [0x0x7ff7e815c974+115220]
+	GetHandleVerifier [0x0x7ff7e815cb29+115657]
+	GetHandleVerifier [0x0x7ff7e8143268+11016]
+	BaseThreadInitThunk [0x0x7ffc9bc5e8d7+23]
+	RtlUserThreadStart [0x0x7ffc9cdc8d9c+44]
+
+
+3) Element '02-09-2025' not visible after 20 seconds.</status>
+</test>
+<status status="FAIL" start="2025-09-02T23:55:31.605742" elapsed="33.605850"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="0" fail="1" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-02T23:55:31.648103" level="ERROR">Error in file 'C:\Users\ASUS\PycharmProjects\RobotFramework\TestCases\test.robot' on line 2: Invalid resource file extension '.py'. Supported extensions are '.json', '.resource', '.rest', '.robot', '.rsrc', '.rst', '.tsv' and '.txt'.</msg>
+<msg time="2025-09-02T23:55:31.649475" level="ERROR">Error in file 'C:\Users\ASUS\PycharmProjects\RobotFramework\Resources\libraries.robot' on line 5: Setting 'Suite Setup' is not allowed in resource file.</msg>
+<msg time="2025-09-02T23:55:31.649747" level="ERROR">Error in file 'C:\Users\ASUS\PycharmProjects\RobotFramework\Resources\libraries.robot' on line 6: Setting 'Suite Teardown' is not allowed in resource file.</msg>
+</errors>
+</robot>
