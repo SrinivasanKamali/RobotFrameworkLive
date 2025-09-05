@@ -1,0 +1,44 @@
+Learn Selenium
+Amit
+Selenium
+300
+Learn Java
+Mukesh
+Java
+500
+Learn JS
+Animesh
+Javascript
+300
+Master In Selenium
+Mukesh
+Selenium
+3000
+Master In Java
+Amod
+JAVA
+2000
+Master In JS
+Amit
+Javascript
+1000
+Chrome
+8.7 Mbps
+1.4%
+0.91 MB/s
+56.6 MB
+System
+4.0 Mbps
+7.2%
+0.24 MB/s
+60.1 MB
+Internet Explorer
+7.7 Mbps
+6.1%
+0.21 MB/s
+38.2 MB
+Firefox
+2.1 Mbps
+8.4%
+0.89 MB/s
+94.4 MB
