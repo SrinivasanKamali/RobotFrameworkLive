@@ -43,3 +43,6 @@ TC005_Handling the SVG and linnks
     Links and Broken Links
 TC006_Handling the broken links
     Broken Links    ${url}
+
+TC007_Form submission
+    Form submission

@@ -201,5 +201,36 @@ Broken Links
     ...    ELSE    Log To Console   OK: ${url} (Status: ${status})
 
 
+Form submission
+    #[Arguments]  ${input1}  ${input2}   ${input3}
+    ${txt_val1}=    Get Text    ${p1}
+    Wait Until Element Is Enabled     ${sec1}   ${time}
+    Input Text      ${sec1}   ${txt_val1}
+    Click Button    ${sec1_btn}
+    ${txt_val2}=    Get Text    ${p2}
+    Wait Until Element Is Enabled     ${sec2}   ${time}
+    Input Text      ${sec2}   ${txt_val2}
+    Click Button    ${sec2_btn}
+
+    ${txt_val3}=    Get Text    ${p3}
+    Wait Until Element Is Enabled     ${sec3}   ${time}
+    Input Text      ${sec3}   ${txt_val3}
+    Click Button    ${sec3_btn}
+
+    ${ele}=   Get WebElements     ${footer_links}
+    FOR    ${index}    IN    @{ele}
+        ${text}=        Get Text           ${index}
+        IF    $text == 'Home'
+            Log To Console    Skipping 'Home' link
+            CONTINUE
+        END
+        Click Element    ${index}
+        Go Back
+        Sleep    1s
+    END
+
+
+
+
 
 
