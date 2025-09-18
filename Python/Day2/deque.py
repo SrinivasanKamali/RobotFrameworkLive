@@ -1,0 +1,20 @@
+from collections import deque
+
+deque=deque()
+deque.append(10)
+deque.append(20)
+deque.append(30)
+print(deque)
+deque.appendleft(1)
+print(deque)
+deque.popleft()
+print("left pop after:",deque)
+deque.pop()
+print("pop after:",deque)
+deque.rotate(1)
+print("rotate after:",deque)
+deque.reverse()
+print("reverse:",deque)
+deque.clear()
+print("clear the values:",deque)
+
