@@ -1,0 +1,1698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-09-25T23:50:50.440636" rpa="false" schemaversion="5">
+<suite id="s1" name="Test 001" source="C:\Users\ASUS\PycharmProjects\RobotFramework\python\Day7\Testcases\test_001.robot">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>Browser opened</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:50:51.281755" elapsed="0.000373"/>
+</kw>
+<test id="s1-t1" name="TC001_Login with valid credentials" line="13">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>Testing started</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:50:51.282810" elapsed="0.000306"/>
+</kw>
+<kw name="Open Browser and enter valid details" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:50:51.284139" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T23:50:51.283907" elapsed="5.174242"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T23:50:56.458440" elapsed="0.033521"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-09-25T23:50:51.283516" elapsed="5.208651"/>
+</kw>
+<kw name="Enter the information" owner="keywords">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-25T23:50:56.493348" level="INFO">Test Execution Started</msg>
+<arg>Test Execution Started</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-25T23:50:56.493221" elapsed="0.000190"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${name}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-25T23:50:56.493550" elapsed="0.547110"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:50:57.041686" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<arg>${name}</arg>
+<arg>${user_val}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:50:57.041288" elapsed="0.111375"/>
+</kw>
+<arg>Input Text</arg>
+<arg>${name}</arg>
+<arg>${user_val}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:50:57.040978" elapsed="0.111849"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-25T23:50:57.153089" elapsed="0.017668"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:50:57.171601" level="INFO">Typing text 'admin123' into text field 'xpath://input[@name='password']'.</msg>
+<arg>${password}</arg>
+<arg>${pass_val}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:50:57.171250" elapsed="0.092650"/>
+</kw>
+<arg>Input Text</arg>
+<arg>${password}</arg>
+<arg>${pass_val}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:50:57.170970" elapsed="0.093115"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${button}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-25T23:50:57.264403" elapsed="0.015118"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:50:57.280120" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<arg>${button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:50:57.279911" elapsed="0.080852"/>
+</kw>
+<arg>click element</arg>
+<arg>${button}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:50:57.279730" elapsed="0.081140"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T23:50:59.361897" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T23:50:57.361021" elapsed="2.001252"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-25T23:50:59.363427" level="INFO">Wait Completed</msg>
+<arg>Wait Completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-25T23:50:59.362931" elapsed="0.000708"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:50:59.387011" level="INFO">${title} = OrangeHRM</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-25T23:50:59.364170" elapsed="0.023072"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:50:59.387827" elapsed="0.001272"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>${title_val}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-25T23:50:59.390773" elapsed="0.000895"/>
+</kw>
+<msg time="2025-09-25T23:50:59.392210" level="INFO">${sts} = True</msg>
+<var>${sts}</var>
+<arg>Should Be Equal</arg>
+<arg>${title}</arg>
+<arg>${title_val}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-09-25T23:50:59.389696" elapsed="0.002774"/>
+</kw>
+<if>
+<branch type="IF" condition="${sts}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Matched!!!!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:50:59.394974" elapsed="0.001547"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:50:59.393347" elapsed="0.003694"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="NOT RUN" start="2025-09-25T23:50:59.398465" elapsed="0.000232"/>
+</kw>
+<kw name="Fail" owner="BuiltIn">
+<arg>Failed!!!</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2025-09-25T23:50:59.399453" elapsed="0.000227"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:50:59.397490" elapsed="0.002573"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:50:59.393177" elapsed="0.007191"/>
+</if>
+<arg>${user_val}</arg>
+<arg>${pass_val}</arg>
+<arg>${title_val}</arg>
+<status status="PASS" start="2025-09-25T23:50:56.492751" elapsed="2.908071"/>
+</kw>
+<kw name="search the python library" owner="keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:50:59.407891" level="INFO">Executing JavaScript:
+window.open("https://duckduckgo.com/", "_blank");
+Without any arguments.</msg>
+<arg>window.open("${url1}", "_blank");</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-09-25T23:50:59.405328" elapsed="0.140215"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T23:51:02.546665" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T23:50:59.545824" elapsed="3.001178"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:02.548479" elapsed="0.022952"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${search}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-25T23:51:02.571696" elapsed="0.027207"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:02.599330" level="INFO">Typing text 'python' into text field 'id:searchbox_input'.</msg>
+<arg>${search}</arg>
+<arg>${search_txt}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:02.599085" elapsed="0.110582"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:02.710700" level="INFO">Sending key(s) ('RETURN',) to id:searchbox_input element.</msg>
+<msg time="2025-09-25T23:51:03.013624" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-09-25T23:51:03.013763" level="INFO">Releasing special key RETURN.</msg>
+<arg>${search}</arg>
+<arg>${ENTER}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-09-25T23:51:02.710042" elapsed="0.321426"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T23:51:06.032212" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T23:51:03.031789" elapsed="3.000604"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${links}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.032707" elapsed="0.054633"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.133051" level="INFO">${links1} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.70")&gt;, &lt;selenium.webdriv...</msg>
+<var>${links1}</var>
+<arg>${links}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.087571" elapsed="0.045584"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.142665" level="INFO">${url_list} = https://duckduckgo.com/?t=h_</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.134267" elapsed="0.008468"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.161742" level="INFO">${txt} = DuckDuckGo</msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.142975" elapsed="0.018842"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.162090" elapsed="0.000407"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.162723" elapsed="0.000353"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.163684" elapsed="0.000058"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.163950" elapsed="0.000057"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.163252" elapsed="0.000837"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.164358" elapsed="0.000284"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.165132" elapsed="0.000274"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.164875" elapsed="0.000670"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.164174" elapsed="0.001430"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.163214" elapsed="0.002437"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.70")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.133977" elapsed="0.031707"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.174059" level="INFO">${url_list} = https://duckduckgo.com/windows?origin=funnel_browser_searchresults__popover</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.166026" elapsed="0.008106"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.182797" level="INFO">${txt} = Download Browser</msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.174392" elapsed="0.008454"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.183013" elapsed="0.000305"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.183466" elapsed="0.000252"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.184089" elapsed="0.000035"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.184272" elapsed="0.000055"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.183827" elapsed="0.000553"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.184566" elapsed="0.000696"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.186324" elapsed="0.000405"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.185749" elapsed="0.001094"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.184434" elapsed="0.002511"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.183801" elapsed="0.003233"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.46")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.165900" elapsed="0.021189"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.195544" level="INFO">${url_list} = https://duckduckgo.com/?origin=funnel_home_website&amp;t=h_&amp;q=python&amp;ia=web</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.187871" elapsed="0.007756"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.225775" level="INFO">${txt} = All</msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.195935" elapsed="0.029924"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.226148" elapsed="0.000455"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.226857" elapsed="0.000924"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.228601" elapsed="0.000067"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.228910" elapsed="0.000058"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.228089" elapsed="0.000958"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.229327" elapsed="0.000361"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.230256" elapsed="0.000405"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.229963" elapsed="0.000873"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.229123" elapsed="0.001817"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.228034" elapsed="0.002979"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.71")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.187665" elapsed="0.043405"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.240077" level="INFO">${url_list} = https://duckduckgo.com/?origin=funnel_home_website&amp;t=h_&amp;q=python&amp;ia=images&amp;iax=images</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.231596" elapsed="0.008563"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.249916" level="INFO">${txt} = Images</msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.240430" elapsed="0.009537"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.250132" elapsed="0.000328"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.250718" elapsed="0.000449"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.252168" elapsed="0.000115"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.252548" elapsed="0.000067"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.251560" elapsed="0.001147"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.253021" elapsed="0.000445"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.254017" elapsed="0.000372"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.253722" elapsed="0.000839"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.252814" elapsed="0.001849"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.251505" elapsed="0.003239"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.72")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.231428" elapsed="0.023378"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.263526" level="INFO">${url_list} = https://duckduckgo.com/?origin=funnel_home_website&amp;t=h_&amp;q=python&amp;ia=videos&amp;iax=videos</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.255539" elapsed="0.008075"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.280066" level="INFO">${txt} = Videos</msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.263912" elapsed="0.016239"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.280441" elapsed="0.000906"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.281616" elapsed="0.000408"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.282722" elapsed="0.000082"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.283044" elapsed="0.000062"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.282226" elapsed="0.000987"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.283542" elapsed="0.000452"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.287927" elapsed="0.003320"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.284303" elapsed="0.007226"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.283316" elapsed="0.008338"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.282171" elapsed="0.009581"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.73")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.255206" elapsed="0.036614"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.301680" level="INFO">${url_list} = https://duckduckgo.com/?origin=funnel_home_website&amp;t=h_&amp;q=python&amp;ia=news&amp;iar=news</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.293063" elapsed="0.008727"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.355625" level="INFO">${txt} = News</msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.302270" elapsed="0.053436"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.356002" elapsed="0.000528"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.356837" elapsed="0.000452"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.358182" elapsed="0.000067"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.358479" elapsed="0.000054"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.357574" elapsed="0.001034"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.358904" elapsed="0.000795"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.360309" elapsed="0.000361"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.360002" elapsed="0.000806"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.358688" elapsed="0.002218"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.357464" elapsed="0.003513"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.74")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.292505" elapsed="0.068527"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.371427" level="INFO">${url_list} = https://duckduckgo.com/?origin=funnel_home_website&amp;t=h_&amp;q=python&amp;iaxm=maps</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.361568" elapsed="0.009946"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.387453" level="INFO">${txt} = Maps</msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.372126" elapsed="0.016055"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.388498" elapsed="0.000703"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.389521" elapsed="0.000444"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.390569" elapsed="0.000057"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.390813" elapsed="0.000054"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.390157" elapsed="0.000780"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.391237" elapsed="0.000372"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.392175" elapsed="0.000367"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.391888" elapsed="0.000849"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.391018" elapsed="0.001854"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.390118" elapsed="0.002843"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.75")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.361374" elapsed="0.031660"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.400185" level="INFO">${url_list} = https://duckduckgo.com/?origin=funnel_home_website&amp;t=h_&amp;q=python&amp;ia=web&amp;assist=true</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.393622" elapsed="0.006635"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.425233" level="INFO">${txt} = Search Assist</msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.400520" elapsed="0.024801"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.425612" elapsed="0.000450"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.426357" elapsed="0.000436"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.427453" elapsed="0.000071"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.427747" elapsed="0.000053"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.426995" elapsed="0.001024"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.428328" elapsed="0.000340"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.429219" elapsed="0.000308"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.428930" elapsed="0.000766"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.428116" elapsed="0.001689"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.426948" elapsed="0.002933"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.76")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.393445" elapsed="0.036512"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.438305" level="INFO">${url_list} = https://duckduckgo.com/?origin=funnel_home_website&amp;t=h_&amp;q=python&amp;ia=chat</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.430577" elapsed="0.007913"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.453811" level="INFO">${txt} = Duck.ai</msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.438959" elapsed="0.014936"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.454199" elapsed="0.000946"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.455777" elapsed="0.000516"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.457138" elapsed="0.000086"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.457459" elapsed="0.000057"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.456610" elapsed="0.000982"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.457867" elapsed="0.000366"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.458715" elapsed="0.000334"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.458456" elapsed="0.000728"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.457680" elapsed="0.001593"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.456560" elapsed="0.002786"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.77")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.430367" elapsed="0.029031"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.470695" level="INFO">${url_list} = None</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.459929" elapsed="0.010818"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.479901" level="INFO">${txt} = </msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.470948" elapsed="0.008999"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.480121" elapsed="0.000303"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.480583" elapsed="0.000261"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.481201" elapsed="0.000040"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.481354" elapsed="0.000032"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.480954" elapsed="0.000477"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.481577" elapsed="0.000197"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.482063" elapsed="0.000191"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.481915" elapsed="0.000415"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.481476" elapsed="0.000908"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.480929" elapsed="0.001494"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.78")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.459743" elapsed="0.022709"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.490198" level="INFO">${url_list} = https://duckduckgo.com/duckduckgo-help-pages/search-privacy/</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.482767" elapsed="0.007499"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.498971" level="INFO">${txt} = </msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.490522" elapsed="0.008496"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.499179" elapsed="0.000292"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.499625" elapsed="0.000249"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.500294" elapsed="0.000033"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.500433" elapsed="0.000030"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.500045" elapsed="0.000458"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.500639" elapsed="0.000198"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.501130" elapsed="0.000983"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.500979" elapsed="0.001345"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.500545" elapsed="0.001871"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.500020" elapsed="0.002483"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.79")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.482654" elapsed="0.019903"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.509056" level="INFO">${url_list} = https://duckduckgo.com/settings#appearance</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.503178" elapsed="0.005960"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.516813" level="INFO">${txt} = </msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.509392" elapsed="0.007469"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.517064" elapsed="0.000405"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.517700" elapsed="0.000522"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.519347" elapsed="0.000065"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.519578" elapsed="0.000039"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.518451" elapsed="0.001217"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.519885" elapsed="0.000311"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.520552" elapsed="0.000250"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.520361" elapsed="0.000536"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.519725" elapsed="0.001224"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.518401" elapsed="0.002605"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.80")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.502902" elapsed="0.018162"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.527101" level="INFO">${url_list} = None</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.521549" elapsed="0.005608"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.534390" level="INFO">${txt} = India (en)</msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.527326" elapsed="0.007129"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.534840" elapsed="0.000449"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.535613" elapsed="0.000442"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.536489" elapsed="0.000036"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.536656" elapsed="0.000032"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.536192" elapsed="0.000545"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.536915" elapsed="0.000272"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.537501" elapsed="0.000265"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.537338" elapsed="0.000536"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.536807" elapsed="0.001152"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.536164" elapsed="0.001868"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.81")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.521368" elapsed="0.016699"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.543895" level="INFO">${url_list} = None</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.538476" elapsed="0.005466"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.553268" level="INFO">${txt} = </msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.544108" elapsed="0.009261"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.553838" elapsed="0.000556"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.554633" elapsed="0.000404"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.555528" elapsed="0.000037"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.555682" elapsed="0.000030"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.555217" elapsed="0.000536"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.555892" elapsed="0.000280"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.556501" elapsed="0.000218"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.556330" elapsed="0.000476"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.555796" elapsed="0.001070"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.555171" elapsed="0.001741"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.82")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.538337" elapsed="0.018612"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.562799" level="INFO">${url_list} = None</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.557350" elapsed="0.005613"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.573842" level="INFO">${txt} = </msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.563320" elapsed="0.010604"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.574168" elapsed="0.000364"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.574739" elapsed="0.000272"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.575432" elapsed="0.000040"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.575609" elapsed="0.000043"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.575147" elapsed="0.000619"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.576057" elapsed="0.000345"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.576744" elapsed="0.000272"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.576580" elapsed="0.000544"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.575869" elapsed="0.001350"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.575112" elapsed="0.002192"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.83")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.557214" elapsed="0.020141"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.584085" level="INFO">${url_list} = https://duckduckgo.com/?q=python%20site%3Awww.python.org</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.577863" elapsed="0.006272"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.595481" level="INFO">${txt} = </msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.584313" elapsed="0.011216"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.595695" elapsed="0.000320"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.596196" elapsed="0.000276"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.596833" elapsed="0.000034"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.597008" elapsed="0.000037"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.596585" elapsed="0.000505"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.597325" elapsed="0.000258"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.597921" elapsed="0.000203"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.597754" elapsed="0.000448"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.597166" elapsed="0.001090"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.596559" elapsed="0.001738"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.84")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.577706" elapsed="0.020623"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.605161" level="INFO">${url_list} = https://duckduckgo.com/?q=python%20-site%3Awww.python.org</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.598649" elapsed="0.006565"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.614647" level="INFO">${txt} = </msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.605395" elapsed="0.009313"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.614882" elapsed="0.000303"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.615353" elapsed="0.000265"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.615983" elapsed="0.000034"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.616128" elapsed="0.000030"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.615741" elapsed="0.000456"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.616338" elapsed="0.000277"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.617080" elapsed="0.000233"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.616878" elapsed="0.000518"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.616240" elapsed="0.001211"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.615714" elapsed="0.001779"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.85")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.598539" elapsed="0.019228"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.625977" level="INFO">${url_list} = None</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.619407" elapsed="0.006618"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.633661" level="INFO">${txt} = </msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.626197" elapsed="0.007512"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.633872" elapsed="0.000295"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.634581" elapsed="0.000689"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.636007" elapsed="0.000068"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.636275" elapsed="0.000067"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.635540" elapsed="0.000867"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.636605" elapsed="0.000330"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.637353" elapsed="0.000263"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.637118" elapsed="0.000596"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.636466" elapsed="0.001299"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.635472" elapsed="0.002333"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.86")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.618924" elapsed="0.018912"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.643660" level="INFO">${url_list} = https://duckduckgo.com/?q=python+site:www.python.org&amp;t=h_</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.638188" elapsed="0.005522"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.653144" level="INFO">${txt} = </msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.643880" elapsed="0.009335"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.653422" elapsed="0.000336"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.653943" elapsed="0.000295"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.654668" elapsed="0.000040"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:06.654932" elapsed="0.000042"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:06.654364" elapsed="0.000657"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.655177" elapsed="0.000370"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Failed errorfacing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.655990" elapsed="0.000392"/>
+</kw>
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.655779" elapsed="0.000727"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.655068" elapsed="0.001490"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.654336" elapsed="0.002316"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.87")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.638063" elapsed="0.018626"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.662821" level="INFO">${url_list} = https://www.python.org/</msg>
+<var>${url_list}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.657038" elapsed="0.005832"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.673769" level="INFO">${txt} = https://www.python.org</msg>
+<var>${txt}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.663040" elapsed="0.010809"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL: ${url_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.674168" elapsed="0.000446"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TEXT: ${txt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.674807" elapsed="0.000272"/>
+</kw>
+<if>
+<branch type="IF" condition="'${url_list}' == '${link_val}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:06.675674" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.88")&gt;'.</msg>
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T23:51:06.675477" elapsed="1.348452"/>
+</kw>
+<kw name="Exit For Loop" owner="BuiltIn">
+<msg time="2025-09-25T23:51:08.024588" level="INFO">Exiting for loop altogether.</msg>
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.024342" elapsed="0.000421"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:06.675208" elapsed="1.349693"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No match found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:08.025242" elapsed="0.000050"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<arg>Log To Console</arg>
+<arg>Failed errorfacing</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:08.025464" elapsed="0.000046"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:08.025013" elapsed="0.000562"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:06.675181" elapsed="1.350446"/>
+</if>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d319fb82a17f55022798fa3d98b7729", element="f.95459C2C7504C45C6868DAC6C4F1037F.d.5B047BADF17031D2C7487FC581458AB3.e.88")&gt;</var>
+<status status="PASS" start="2025-09-25T23:51:06.656905" elapsed="1.368772"/>
+</iter>
+<var>${i}</var>
+<value>@{links1}</value>
+<status status="PASS" start="2025-09-25T23:51:06.133381" elapsed="1.892374"/>
+</for>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:08.031737" level="INFO">${title1} = Welcome to Python.org</msg>
+<var>${title1}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.025947" elapsed="0.005847"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.031990" elapsed="0.000450"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${title1}</arg>
+<arg>${title_val1}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.033073" elapsed="0.000392"/>
+</kw>
+<msg time="2025-09-25T23:51:08.033652" level="INFO">${sts1} = True</msg>
+<var>${sts1}</var>
+<arg>Should Be Equal</arg>
+<arg>${title1}</arg>
+<arg>${title_val1}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.032735" elapsed="0.000979"/>
+</kw>
+<if>
+<branch type="IF" condition="${sts1}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>pyhton title Matched!!!!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.034165" elapsed="0.000559"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:08.033895" elapsed="0.000964"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:08.035652" elapsed="0.000160"/>
+</kw>
+<kw name="Fail" owner="BuiltIn">
+<arg>Failed!!!</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2025-09-25T23:51:08.036327" elapsed="0.000242"/>
+</kw>
+<status status="NOT RUN" start="2025-09-25T23:51:08.035031" elapsed="0.001655"/>
+</branch>
+<status status="PASS" start="2025-09-25T23:51:08.033856" elapsed="0.003140"/>
+</if>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-25T23:51:08.238447" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="success.png"&gt;&lt;img src="success.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>success.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.037272" elapsed="0.201344"/>
+</kw>
+<arg>${url1}</arg>
+<arg>${search_txt}</arg>
+<arg>${link_val}</arg>
+<arg>${ENTER}</arg>
+<arg>${title_val}</arg>
+<status status="PASS" start="2025-09-25T23:50:59.403348" elapsed="8.835447"/>
+</kw>
+<kw name="create a file and save details" owner="keywords">
+<kw name="Create File" owner="OperatingSystem">
+<msg time="2025-09-25T23:51:08.241209" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\ASUS\PycharmProjects\RobotFramework\python\Day7\Resources\datafile\logs.txt"&gt;C:\Users\ASUS\PycharmProjects\RobotFramework\python\Day7\Resources\datafile\logs.txt&lt;/a&gt;'.</msg>
+<arg>${path}</arg>
+<arg>${file_val}</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.239882" elapsed="0.001493"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-25T23:51:08.241894" level="INFO">File Created:C:\Users\ASUS\PycharmProjects\RobotFramework\python\Day7\Resources/datafile/logs.txt</msg>
+<arg>File Created:${path}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.241638" elapsed="0.000322"/>
+</kw>
+<kw name="File Should Exist" owner="OperatingSystem">
+<msg time="2025-09-25T23:51:08.242347" level="INFO" html="true">File '&lt;a href="file://C:\Users\ASUS\PycharmProjects\RobotFramework\python\Day7\Resources\datafile\logs.txt"&gt;C:\Users\ASUS\PycharmProjects\RobotFramework\python\Day7\Resources\datafile\logs.txt&lt;/a&gt;' exists.</msg>
+<arg>${path}</arg>
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.242111" elapsed="0.000312"/>
+</kw>
+<kw name="Get File" owner="OperatingSystem">
+<msg time="2025-09-25T23:51:08.242882" level="INFO" html="true">Getting file '&lt;a href="file://C:\Users\ASUS\PycharmProjects\RobotFramework\python\Day7\Resources\datafile\logs.txt"&gt;C:\Users\ASUS\PycharmProjects\RobotFramework\python\Day7\Resources\datafile\logs.txt&lt;/a&gt;'.</msg>
+<msg time="2025-09-25T23:51:08.244529" level="INFO">${val} = Hello Robot Framework</msg>
+<var>${val}</var>
+<arg>${path}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.242591" elapsed="0.002029"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-25T23:51:08.245095" level="INFO">The file content :Hello Robot Framework</msg>
+<arg>The file content :${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.244829" elapsed="0.000370"/>
+</kw>
+<arg>${path}</arg>
+<arg>${file_val}</arg>
+<status status="PASS" start="2025-09-25T23:51:08.239264" elapsed="0.006085"/>
+</kw>
+<kw name="Get current time and date" owner="keywords">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-25T23:51:08.246332" level="INFO">${time} = 25/09/2025</msg>
+<var>${time}</var>
+<arg>result_format=%d/%m/%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.246000" elapsed="0.000394"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-25T23:51:08.246997" level="INFO">The current time:25/09/2025</msg>
+<arg>The current time:${time}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.246696" elapsed="0.000395"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.247342" elapsed="0.000403"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-25T23:51:08.248356" level="INFO">${day} = 25</msg>
+<var>${day}</var>
+<arg>result_format=%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.247993" elapsed="0.000425"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-25T23:51:08.248976" level="INFO">${month} = 09</msg>
+<var>${month}</var>
+<arg>result_format=%m</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.248657" elapsed="0.000383"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-25T23:51:08.249644" level="INFO">${year} = 2025</msg>
+<var>${year}</var>
+<arg>result_format=%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.249295" elapsed="0.000401"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-25T23:51:08.250187" level="INFO">The current day:25</msg>
+<arg>The current day:${day}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.249927" elapsed="0.000359"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-25T23:51:08.250755" level="INFO">The Current month:09</msg>
+<arg>The Current month:${month}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.250508" elapsed="0.000347"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-25T23:51:08.251577" level="INFO">The Current year:2025</msg>
+<arg>The Current year:${year}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.251087" elapsed="0.000611"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${day}${month}${year}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.253904" elapsed="0.000900"/>
+</kw>
+<kw name="Add Time To Date" owner="DateTime">
+<msg time="2025-09-25T23:51:08.256251" level="INFO">${future_date} = 10/10/2025 00:00:00</msg>
+<var>${future_date}</var>
+<arg>${time}</arg>
+<arg>15 days</arg>
+<arg>date_format=%d/%m/%Y</arg>
+<arg>result_format=%d/%m/%Y %H:%M:%S</arg>
+<doc>Adds time to date and returns the resulting date.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.255089" elapsed="0.001244"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-25T23:51:08.256952" level="INFO">The Future date :10/10/2025 00:00:00</msg>
+<arg>The Future date :${future_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.256647" elapsed="0.000412"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${future_date}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.257310" elapsed="0.000419"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:51:08.245739" elapsed="0.012112"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Testing Completed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.258207" elapsed="0.000270"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:50:51.282297" elapsed="16.976395"/>
+</test>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Browser closed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T23:51:08.259817" elapsed="0.000420"/>
+</kw>
+<status status="PASS" start="2025-09-25T23:50:50.442202" elapsed="17.818161"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test 001" id="s1" pass="1" fail="0" skip="0">Test 001</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-25T23:50:50.478444" level="ERROR">Error in file 'C:\Users\ASUS\PycharmProjects\RobotFramework\python\Day7\Testcases\test_001.robot' on line 2: Invalid resource file extension '.py'. Supported extensions are '.json', '.resource', '.rest', '.robot', '.rsrc', '.rst', '.tsv' and '.txt'.</msg>
+</errors>
+</robot>
