@@ -11,6 +11,8 @@ print(df)
 #missing values in Dataframe
 a=df.fillna(df['salary'].mean())
 print(a)
+a=df.fillna(df['salary'].mean())
+print(a)
 
 #save result to report file
 a.to_excel('report.xlsx')
