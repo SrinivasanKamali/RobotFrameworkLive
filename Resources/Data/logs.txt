@@ -23,22 +23,22 @@ Amit
 Javascript
 1000
 System
-2.4%
-1.8 Mbps
-93.2 MB
-0.11 MB/s
+1.0%
+0.47 MB/s
+3.0 Mbps
+86.9 MB
 Chrome
-1.8%
-6.7 Mbps
-36.1 MB
-0.02 MB/s
-Firefox
-5.3%
-2.9 Mbps
-89.3 MB
-0.46 MB/s
+4.4%
+0.44 MB/s
+2.6 Mbps
+80.5 MB
 Internet Explorer
-4.6%
-8.2 Mbps
-55.7 MB
-0.20 MB/s
+0.7%
+0.04 MB/s
+1.1 Mbps
+64.1 MB
+Firefox
+5.2%
+0.80 MB/s
+9.7 Mbps
+56.9 MB

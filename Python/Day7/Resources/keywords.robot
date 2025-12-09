@@ -81,6 +81,7 @@ Get current time and date
     ${day}=     Get Current Date    result_format=%d
     ${month}=   Get Current Date    result_format=%m
     ${year}=    Get Current Date    result_format=%Y
+    ${year1}=   Get Current Date    result_format=%y
 
     Log     The current day:${day}
     Log     The Current month:${month}
