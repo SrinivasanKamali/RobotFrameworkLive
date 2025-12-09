@@ -1,0 +1,48 @@
+==============================================================================
+Testcases                                                                     
+==============================================================================
+Testcases.Test                                                                
+==============================================================================
+TC001_Checking the testing application with valid data                Automation Testing Practice
+Matched!!!!
+id:name
+Single file selected: 107_S2058_110_0406.pdf, Size: 119649 bytes, Type: application/pdf
+Single file selected: 107_S2058_110_0406.pdf, Size: 119649 bytes, Type: application/pdf
+True
+sucesss
+Multiple files selected:
+107_S2058_110_0406.pdf, Size: 119649 bytes, Type: application/pdf
+Multiple files selected:
+107_S2058_110_0406.pdf, Size: 119649 bytes, Type: application/pdf
+sucesss
+| PASS |
+------------------------------------------------------------------------------
+TC003_Reading the table values                                        | PASS |
+------------------------------------------------------------------------------
+TC004_Handling the alerts and mouse actions                           www.pavantestingtools.com
+| PASS |
+------------------------------------------------------------------------------
+TC005_Handling the SVG and linnks                                     red
+green
+blue
+Samsung
+Real Me
+Moto
+Apple
+Lenovo
+Dell
+| PASS |
+------------------------------------------------------------------------------
+TC006_Handling the broken links                                       OK: https://testautomationpractice.blogspot.com/# (Status: 200)
+| PASS |
+------------------------------------------------------------------------------
+TC007_Form submission                                                 Skipping 'Home' link
+| PASS |
+------------------------------------------------------------------------------
+Testcases.Test                                                        | PASS |
+6 tests, 6 passed, 0 failed
+==============================================================================
+Testcases                                                             | PASS |
+6 tests, 6 passed, 0 failed
+==============================================================================
+Output:  C:\Users\ASUS\PycharmProjects\RobotFramework\pabot_results\0\output.xml

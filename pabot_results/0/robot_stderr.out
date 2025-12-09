@@ -1,0 +1,3 @@
+[ ERROR ] Error in file 'C:\Users\ASUS\PycharmProjects\RobotFramework\Testcases\test.robot' on line 2: Invalid resource file extension '.py'. Supported extensions are '.json', '.resource', '.rest', '.robot', '.rsrc', '.rst', '.tsv' and '.txt'.
+C:\Users\ASUS\PycharmProjects\RobotFramework\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'testautomationpractice.blogspot.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
