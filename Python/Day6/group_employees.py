@@ -19,5 +19,4 @@ print(a2a)
 aa=df.groupby('dept')['salary'].mean()
 print(aa)
 
-#exampl
 #example
