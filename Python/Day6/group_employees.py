@@ -14,3 +14,7 @@ print(a)
 #group by name and dept
 a2a=df.groupby('dept')['salary'].mean()
 print(a2a)
+
+#group by name and dept
+aa=df.groupby('dept')['salary'].mean()
+print(aa)
