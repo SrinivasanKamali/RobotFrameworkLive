@@ -20,3 +20,4 @@ aa=df.groupby('dept')['salary'].mean()
 print(aa)
 
 #example
+#examplw2
